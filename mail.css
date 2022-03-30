@@ -1,0 +1,47 @@
+body {
+    overflow: hidden;
+  margin: 0;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+.container {
+    width: 100%;
+    display :flex;
+    padding: 0 20px;
+    
+}
+.slide{
+    height: 80vh;
+    margin:10px;
+    border-radius: 20px;
+    box-shadow: 0 0px 15px #ccc;
+    
+    cursor :pointer ;
+    flex:0,1 ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.slide h3{
+    opacity: 0;
+    font-size: 24px;
+      
+}
+.slide.active{
+    flex:10;
+}
+.slide.active h3 {
+    opacity : 1;
+    transition: opacity 0.3s ease-in;
+    position: absolute;
+    margin: 0 ;
+    bottom: 90px;
+    color:aliceblue;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    
+    
+}
